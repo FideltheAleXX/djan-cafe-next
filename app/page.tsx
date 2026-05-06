@@ -1,11 +1,15 @@
+import DishSlider from '@/components/dishSlider/DishSlider';
 import Header from '@/components/header/Header';
-import Image from 'next/image';
+import Location from '@/components/location/Location';
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <main>Головна</main>
+      <main>
+        <DishSlider />
+        <Location />
+      </main>
     </div>
   );
 }
