@@ -1,17 +1,14 @@
-'use client';
-
 import Menu from '@/components/menu/Menu';
-import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Меню | Кафе "Джан"',
+};
 
 export default function MenuPage() {
   return (
     <div>
-      <Header />
-      <main>
-        <Menu />
-      </main>
-      <Footer />
+      <Menu />
     </div>
   );
 }

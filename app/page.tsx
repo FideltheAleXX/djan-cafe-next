@@ -7,13 +7,9 @@ import Location from '@/components/location/Location';
 export default function Home() {
   return (
     <div>
-      <Header />
-      <main>
-        <DishSlider />
-        <Location />
-        <DishOfDay />
-      </main>
-      <Footer />
+      <DishSlider />
+      <Location />
+      <DishOfDay />
     </div>
   );
 }

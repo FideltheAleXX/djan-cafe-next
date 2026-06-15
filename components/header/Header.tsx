@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import styles from './Header.module.css';
+import Image from 'next/image';
 
 export default function Header() {
   interface NavItem {
@@ -18,8 +19,15 @@ export default function Header() {
   ];
 
   return (
-    <section className={styles.header}>
-      <div>Logo</div>
+    <header className={styles.header}>
+      <div className={styles.logo}>
+        <Image
+          src="/djan-logo.png"
+          fill
+          alt="djan cafe logo"
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
       <nav>
         {navigation.map((nav, index) => {
           return (
@@ -34,6 +42,6 @@ export default function Header() {
         })}
       </nav>
       <div>Cart</div>
-    </section>
+    </header>
   );
 }

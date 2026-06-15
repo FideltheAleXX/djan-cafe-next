@@ -1,13 +1,32 @@
-.categoryItem {
+/* .categoryItem {
   white-space: nowrap;
   padding-bottom: 8px;
   transition: color 0.3s ease;
   color: #9ca3af;
   cursor: pointer;
+} */
+
+.categoryContent {
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.active {
-  border-bottom: 2px solid black;
-  font-weight: bold;
-  color: black;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.categoryBtn {
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.categoryBtn.active {
+  border-bottom-color: #000;
+  font-weight: 600;
 }
