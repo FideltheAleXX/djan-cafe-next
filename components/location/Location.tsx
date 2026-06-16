@@ -11,7 +11,7 @@ export default function Location() {
         src={'/location.png'}
         alt="djan cafe"
         width={1165}
-        height={777}
+        height={700}
       />
     </section>
   );

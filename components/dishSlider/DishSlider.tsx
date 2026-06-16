@@ -17,9 +17,15 @@ export default function DishSlider() {
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
         navigation={true}
+        style={
+          {
+            '--swiper-navigation-color': '#291334',
+            '--swiper-pagination-color': '#291334',
+          } as React.CSSProperties
+        }
       >
         {dishes.map((dish) => (
           <SwiperSlide

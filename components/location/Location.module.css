@@ -1,3 +1,11 @@
+.location {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+}
+
 .locationImg {
   border-radius: 31.25rem;
+  object-fit: cover;
 }

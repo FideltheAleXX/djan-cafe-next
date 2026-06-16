@@ -1,4 +1,27 @@
 .dishOfDay {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  background-color: #262629;
+  color: #e4e4e7;
+  padding: 1rem;
+}
+
+.dishOfDayImg {
+  border-radius: 1rem;
+}
+
+.dishOfDayRight {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  outline: 1px dashed #faf7f5;
+  outline-offset: -8px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 22px;
 }

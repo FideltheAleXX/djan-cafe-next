@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from '../ui/button';
 import styles from './Header.module.css';
 import Image from 'next/image';
+import { FiShoppingCart } from 'react-icons/fi';
 
 export default function Header() {
   interface NavItem {
@@ -22,18 +23,19 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Image
+          className={styles.logoImg}
           src="/djan-logo.png"
           fill
           alt="djan cafe logo"
           style={{ objectFit: 'cover' }}
         />
       </div>
-      <nav>
+      <nav className={styles.navigation}>
         {navigation.map((nav, index) => {
           return (
             <div key={index} className={styles.navLink}>
               <Link href={nav.link}>
-                <Button variant="secondary" size="sm">
+                <Button variant="default" size="sm">
                   {nav.name}
                 </Button>
               </Link>
@@ -41,7 +43,9 @@ export default function Header() {
           );
         })}
       </nav>
-      <div>Cart</div>
+      <div>
+        <FiShoppingCart size={32} />
+      </div>
     </header>
   );
 }
