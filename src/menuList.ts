@@ -3,7 +3,6 @@ export interface MenuItem {
   name: string;
   descr: string;
   img: string;
-  weight: string;
   price: number;
 }
 
@@ -17,7 +16,6 @@ export interface Category {
   id: string;
   title: string;
   subcategories: Subcategory[];
-  items?: MenuItem[];
 }
 
 export const menuList: Category[] = [
@@ -34,7 +32,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -48,7 +45,6 @@ export const menuList: Category[] = [
             name: 'Салат з курки',
             descr: 'курка, огірок, цибуля, яйце, майонез',
             img: 'url.url',
-            weight: '160',
             price: 100,
           },
         ],
@@ -63,7 +59,6 @@ export const menuList: Category[] = [
             descr:
               'айсберг, рукола, авокадо, креветка, філадельфія, пармезан, чері, соус, яйце перепілки',
             img: 'url.url',
-            weight: '280',
             price: 250,
           },
         ],
@@ -83,7 +78,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -97,7 +91,6 @@ export const menuList: Category[] = [
             name: 'Салат з курки',
             descr: 'курка, огірок, цибуля, яйце, майонез',
             img: 'url.url',
-            weight: '160',
             price: 100,
           },
         ],
@@ -112,7 +105,6 @@ export const menuList: Category[] = [
             descr:
               'айсберг, рукола, авокадо, креветка, філадельфія, пармезан, чері, соус, яйце перепілки',
             img: 'url.url',
-            weight: '280',
             price: 250,
           },
         ],
@@ -132,7 +124,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -146,7 +137,6 @@ export const menuList: Category[] = [
             name: 'Салат з курки',
             descr: 'курка, огірок, цибуля, яйце, майонез',
             img: 'url.url',
-            weight: '160',
             price: 100,
           },
         ],
@@ -166,7 +156,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -186,7 +175,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -200,7 +188,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -220,7 +207,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -234,7 +220,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -248,7 +233,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -262,7 +246,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -282,7 +265,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -296,7 +278,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -310,7 +291,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -330,7 +310,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -344,7 +323,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -358,7 +336,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -372,7 +349,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],
@@ -386,7 +362,6 @@ export const menuList: Category[] = [
             name: 'Салат з капусти',
             descr: 'капуста, морква, цибуля, олія',
             img: 'url.url',
-            weight: '140',
             price: 60,
           },
         ],

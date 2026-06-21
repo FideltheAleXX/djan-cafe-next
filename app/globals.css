@@ -6,10 +6,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-.container {
-  max-width: 1280px;
-}
-
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: var(--font-sans);

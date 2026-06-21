@@ -1,12 +1,15 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
 import styles from './Header.module.css';
 import Image from 'next/image';
 import { FiShoppingCart } from 'react-icons/fi';
 
 export default function Header() {
+  const pathname = usePathname();
+
   interface NavItem {
     name: string;
     link: string;
@@ -35,7 +38,11 @@ export default function Header() {
           return (
             <div key={index} className={styles.navLink}>
               <Link href={nav.link}>
-                <Button variant="default" size="sm">
+                <Button
+                  variant={pathname === nav.link ? 'default' : 'ghost'}
+                  size="lg"
+                  style={{ fontSize: '18px' }}
+                >
                   {nav.name}
                 </Button>
               </Link>

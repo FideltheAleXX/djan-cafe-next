@@ -15,31 +15,35 @@ export default function Menu() {
     <div className={styles.categories}>
       <nav className={styles.categoriesNav}>
         {menuList.map((category) => (
-          <button
-            key={category.id}
-            onClick={() => setActiveCategoryId(category.id)}
-            className={`${styles.categoryBtn} ${activeCategoryId === category.id ? styles.active : ''}`}
-          >
-            {category.title}
-          </button>
+          <div key={category.id} className={styles.categoriesNavItem}>
+            <button
+              onClick={() => setActiveCategoryId(category.id)}
+              className={`${styles.categoryBtn} ${activeCategoryId === category.id ? styles.active : ''}`}
+            >
+              {category.title}
+            </button>
+          </div>
         ))}
       </nav>
 
       {/* only active category */}
       {activeCategory && (
         <section className={styles.categoryContent}>
-          <h2>{activeCategory.title}</h2>
-
           {activeCategory.subcategories.map((sub) => (
             <div key={sub.id} className={styles.subcategory}>
-              <h3>{sub.title}</h3>
+              <h3 className={styles.subcategoryTitle}>{sub.title}</h3>
               <ul>
                 {sub.items.map((item) => (
-                  <li key={item.id}>
-                    <span>{item.name}</span>
-                    <span>{item.descr}</span>
-                    <span>{item.weight} гр</span>
-                    <span>{item.price} грн</span>
+                  <li className={styles.subcategoryItem} key={item.id}>
+                    <div className={styles.subcategoryItemHead}>
+                      <div>{item.name}</div>
+                      <div className={styles.subcategoryItemPrice}>
+                        {item.price} грн
+                      </div>
+                    </div>
+                    <div className={styles.subcategoryItemDescr}>
+                      {item.descr}
+                    </div>
                   </li>
                 ))}
               </ul>
