@@ -31,7 +31,7 @@ export default function Footer() {
           <Link href="">
             <FaFacebook size={32} />
           </Link>
-          <Link href="">
+          <Link href="https://www.instagram.com/dzhan.cafe.slavuta/">
             <FaInstagram size={32} />
           </Link>
         </div>

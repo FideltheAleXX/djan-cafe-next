@@ -15,9 +15,8 @@
 .categoryContent {
   animation: fadeIn 0.3s ease-in-out;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  flex: 1;
-  min-width: 300px;
   border: 8px double #d85251;
 }
 
@@ -58,10 +57,11 @@
 }
 
 .subcategory {
-  flex: 1;
+  flex: 1 1 calc(50% - 0.5rem);
   color: #291334;
   text-align: center;
   padding: 16px 8px;
+  min-width: 360px;
 }
 
 .subcategoryTitle {
