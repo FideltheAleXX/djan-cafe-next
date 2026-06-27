@@ -1,0 +1,32 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: 4px double #e6e4e3;
+  margin-bottom: 24px;
+}
+
+.contactsTitle {
+  font-size: 24px;
+}
+
+.contactsPar {
+  margin-top: 12px;
+}
+
+.contactsLink {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 22px;
+  color: #ff6700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.contactsLink:hover {
+  color: #99e600;
+}

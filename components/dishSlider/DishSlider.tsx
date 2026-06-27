@@ -12,6 +12,18 @@ import { dishes } from '../../src/data';
 export default function DishSlider() {
   return (
     <section className={styles.slider}>
+      <div className={styles.imageWrapper}>
+        <Image
+          src="/djan-hall.jpg"
+          alt="cafe hall"
+          fill
+          priority
+          quality={85}
+          sizes="100vw"
+          className={styles.backgroundImage}
+        />
+      </div>
+      <div className={styles.overlay}></div>
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={20}
@@ -20,6 +32,7 @@ export default function DishSlider() {
         autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
         navigation={true}
+        className={styles.swiper}
         style={
           {
             '--swiper-navigation-color': '#291334',

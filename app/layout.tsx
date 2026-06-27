@@ -39,9 +39,10 @@ export default function RootLayout({
         inter.variable,
       )}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body>
         <Header />
-        <main>{children}</main>
+
+        <main className="page-container">{children}</main>
         <Footer />
       </body>
     </html>

@@ -1,0 +1,39 @@
+.about {
+  margin: 12px 0;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #18181b;
+}
+
+.aboutTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+.aboutItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 5px 5px 15px 0px #56524c;
+  border-radius: 6px;
+  padding-left: 12px;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}

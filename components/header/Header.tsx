@@ -17,7 +17,6 @@ export default function Header() {
   const navigation: NavItem[] = [
     { name: 'Головна', link: '/' },
     { name: 'Меню', link: '/menu' },
-    { name: 'Контакти', link: '/contacts' },
     { name: 'Про нас', link: '/about' },
     { name: 'Корисне', link: '/services' },
   ];
