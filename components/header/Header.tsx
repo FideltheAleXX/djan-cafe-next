@@ -38,7 +38,7 @@ export default function Header() {
             <div key={index} className={styles.navLink}>
               <Link href={nav.link}>
                 <Button
-                  variant={pathname === nav.link ? 'default' : 'ghost'}
+                  variant={pathname === nav.link ? 'default' : 'outline'}
                   size="lg"
                   style={{ fontSize: '18px' }}
                 >

@@ -1,7 +1,8 @@
-import Contacts from '@/components/contacts/Contacts';
 import '../globals.css';
 import { Metadata } from 'next';
 import Vacancies from '@/components/vacancies/Vacancies';
+import Giftcards from '@/components/giftcards/Giftcards';
+import Contacts from '@/components/contacts/Contacts';
 
 export const metadata: Metadata = {
   title: 'Корисне | Кафе "Джан"',
@@ -10,8 +11,9 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div>
-      <Contacts />
+      <Giftcards />
       <Vacancies />
+      <Contacts />
     </div>
   );
 }
