@@ -19,6 +19,7 @@ export default function Header() {
     { name: 'Меню', link: '/menu' },
     { name: 'Про нас', link: '/about' },
     { name: 'Корисне', link: '/services' },
+    { name: 'Подарункова карта', link: '/giftcard' },
   ];
 
   return (

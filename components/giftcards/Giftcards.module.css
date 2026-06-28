@@ -1,5 +1,46 @@
 .giftcards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 32px 0;
+  border: 4px double #e6e4e3;
+  background-color: #f8f8f8;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  text-align: center;
+}
+
+.giftcardsBlock {
+  padding: 8px 24px;
+  margin: 12px 0;
+  background: #ffffff;
+  border: 1px solid #e6e6ed;
+  border-radius: 24px;
+}
+
+.selectTrigger,
+.input {
+  width: 320px;
+  background-color: #f8f8f8;
+}
+
+.input {
+  font-size: 16px;
+}
+
+.textarea {
+  width: 480px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+.giftLabel {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.giftcardsBtn {
+  width: 480px;
 }
